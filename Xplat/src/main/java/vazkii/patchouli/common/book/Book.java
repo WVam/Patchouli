@@ -267,7 +267,7 @@ public class Book {
 
 			editionStr = Component.literal(Integer.toString(ver));
 		} catch (NumberFormatException e) {
-			editionStr = Component.translatable("patchouli.gui.lexicon.dev_edition");
+			return Component.translatable("patchouli.gui.lexicon.dev_edition");
 		}
 
 		return Component.translatable("patchouli.gui.lexicon.edition_str", editionStr);
